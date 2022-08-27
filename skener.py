@@ -1,8 +1,14 @@
-r, c, zr, zc = map(int, input().split())
+R, C, Zr, Zc = map(int, input().split())
 l = []
-for i in range(r):
-    a = list(map(str, input().split()))
+for i in range(R):
+    a = input()
     l.append(a)
-r = r*zr
-c = c*zc
-for i in range()
+
+for i in range(R):
+    x = Zr
+    while x > 0:
+        for j in range(C):
+            print(l[i][j]*Zc, end='')
+        print()
+        x -= 1
+     
