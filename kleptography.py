@@ -1,11 +1,9 @@
 n, m = map(int, input().split())
-p = input()  # [::-1]
-c = list(input())  # [::-1])
-x = []
-for i in range(n):
-    x.append(chr((ord(c[i]) - ord(p[i])) % 26 + 97))
-    c[i] = p[i]
-for i in range(n, m):
-    x.append(chr((ord(c[i]) - ord(x[i - n])) % 26 + 97))
-    c[i] = x[i - n]
-print(''.join((c)))  # [::-1]))
+k = input()
+c = input()
+l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+     'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+for i in range(1, m-n+1):
+    x = (l.index(c[-i])-l.index(k[-i])) % 26
+    k = l[x] + k
+print(k)
