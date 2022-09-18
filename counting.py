@@ -16,17 +16,7 @@ for n in s:
         pos += 1
     else:
         neg += 1
-# o=[]
-# cnt=0
-# for m in range(3):
-#     o.append(cnt)
-#     cnt=1
-#     for n in range(m,9,3):
-#         a=s[n]
-#         if a==s[n]:
-#             cnt+=1
-# o=sorted(o)
-# print(o[2])
+
 o = []
 cnt = 0
 for i in range(-y-1, y+2):
@@ -44,5 +34,3 @@ if (q >= 8 and w <= q//2):
     print("satisfactory")
 else:
     print("unsatisfactory")
-
-    # sat%2==0 and
